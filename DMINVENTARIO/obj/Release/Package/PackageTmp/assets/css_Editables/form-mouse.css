@@ -1,0 +1,35 @@
+﻿.formcursor{
+                cursor: not-allowed;
+                display: block;
+                width: 100%;
+                padding: .375rem .75rem;
+                font-size: 1rem;
+                line-height: 1.5;
+                color: #495057;
+                background-color: #fff;
+                background-clip: padding-box;
+                border: 1px solid #ced4da;
+                border-radius: .25rem;
+                transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;  
+ }
+
+input[type="checkbox"]  {
+    display:inline-block;
+    width:19px;
+    height:19px;
+    margin:-1px 4px 0 0;
+    vertical-align:middle;
+    cursor:pointer;
+}
+
+
+
+.radioEspecial {
+    outline-color:transparent;
+    outline-style:none;
+    -webkit-appearance:none;
+	margin-top:80px;
+	margin-right:100px;
+	width : 20%;
+	height: 100px; 
+}
