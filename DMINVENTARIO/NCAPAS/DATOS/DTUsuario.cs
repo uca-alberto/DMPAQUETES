@@ -100,10 +100,9 @@ namespace DMINVENTARIO.NCAPAS.DATOS
 					}
 				}
 			}
-			catch (Exception)
+			catch (Exception Ex)
 			{
-
-				throw;
+				throw Ex;
 			}
 		}
 

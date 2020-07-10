@@ -61,6 +61,9 @@
                           <asp:HiddenField runat="server" ID="Logeo" />
                           <asp:Button ID="BtnLogin" runat="server" Text="Ingresar" CssClass="btn btn-primary" OnClick="BtnLogin_Click" />
                             </div>
+						<div class="modal-footer">
+							<asp:Label runat="server" ID="Error" Visible="false"></asp:Label>
+						</div>
                     </form>
                 </div>
             </div>

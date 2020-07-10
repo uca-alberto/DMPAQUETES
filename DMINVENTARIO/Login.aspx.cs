@@ -33,9 +33,11 @@ namespace DMINVENTARIO
 					ClientScript.RegisterStartupScript(GetType(), "Javascript", "javascript: Validacion(); ", true);
 				}
 			}
-			catch (Exception ex)
+			catch (Exception Ex)
 			{
-				string script = string.Format(@"alert({0});", ex.Message);
+				Error.Text = Ex.Message;
+				Error.Visible = true;
+				string script = string.Format(@"alert('{0}');", Ex.Message);
 				ScriptManager.RegisterStartupScript(this, typeof(Page), "alerta", script, true);
 				return;
 			}
