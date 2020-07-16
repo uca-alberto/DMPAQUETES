@@ -7,7 +7,8 @@ namespace DMINVENTARIO.Modelo.Context
     {
         public ApiContext(string  connectionString)
         {
-            Database.Connection.ConnectionString = connectionString;
+			Database.SetInitializer<ApiContext>(null);
+			Database.Connection.ConnectionString = connectionString;
         }
         public DbSet<ROL_WEB> Rol { get; set; }
         public DbSet<MENU_WEB> Menu { get; set; }
